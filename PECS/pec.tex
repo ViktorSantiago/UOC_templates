@@ -1,0 +1,23 @@
+\documentclass[a4paper, oneside, 12pt]{report}
+
+\def \code {code} 		%% [nocode | code ] Si 'code' => compilar con pdflatex -shell-escape
+\def \visual {src} 			%% [src | print] (cambia el tipo de letra)
+
+\input{./inc/packages.sty}
+\input{./inc/colors.sty}
+\input{./inc/functions.sty}
+
+%% DEFINICIONES %%
+
+\def \trabajo {PEC}
+\def \pregunta	{Cuestión}
+\def \subpregunta {Apartado}
+\author{Nombre del autor}
+\date{}
+\title{Título de la pec} 
+
+\begin{document}
+	
+	\input{./data/ini.tex}
+
+\end{document}

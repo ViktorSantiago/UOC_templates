@@ -1,0 +1,55 @@
+%% ELEMENTOS PROPIOS DE LA PLANTILLA 
+% CABECERA NUMERADA
+\makeatletter
+\newcommand{\cabeceraNum}[1]{
+	\raggedright{{\rmfamily {\large \bf{ {\em \trabajo{} \textcolor{numCabecera}{#1}: \@title{}}}}}}
+		\vspace{0.1cm}\hrule\vspace{0.1cm}
+		\raggedleft{\textcolor{autores}{{\rmfamily {\small{\em \@author{}}}}}}
+		\parskip 0.3cm
+		\parindent 0.3cm \\
+		\raggedright
+	}
+\makeatother
+% FIN DE CABECERA NUMERADA
+
+% CABECERA NO-NUMERADA
+\makeatletter
+\newcommand{\cabecera}{
+	\raggedright{ {\rmfamily {\large \bf{ {\em \trabajo{}: \@title{}}}}}}
+		\vspace{0.1cm}\hrule\vspace{0.1cm}
+		\raggedleft{\textcolor{autores}{{\rmfamily {\small{\em \@author{}}}}}}
+		\parskip 0.3cm
+		\parindent 0.3cm
+	\raggedright
+}
+\makeatother
+% FIN DE CABECERA NO-NUMERADA
+
+%	ENUNCIADO SIN APARTADO
+\newcommand{\enu}[2]{
+	\raggedright{{\rmfamily \textsc{\pregunta{} \textcolor{numero}{#1}}} \vspace{1mm}} 
+	\colorbox{morado}{\parbox[l]{ 0.99\textwidth }{\textcolor{white}{#2}}}
+}
+%	FIN DE ENUNCIADO SIN APARTADO
+
+%	ENUNCIADO CON APARTADO 
+\newcommand{\enunciado}[3]{
+	\raggedright{{\rmfamily \textsc{\pregunta{} \textcolor{numero}{#1} \subpregunta{} \textcolor{numero}{#2}
+		\vspace{1mm}}}}
+		\colorbox{morado}{\parbox[l]{0.99\textwidth}{#3}}
+}
+%	FIN DE ENUNCIADO CON APARTADO
+
+%	CAJA DE CITAS
+\newcommand{\marco}[1]{
+	\begin{center}
+		\fcolorbox{black}{amarillo}{\parbox[l]{ 0.75\textwidth }{#1}}
+	\end{center}
+}
+%%	FIN CAJA DE CITAS
+
+%%	ENLACES
+\newcommand{\enlace}[2]{
+	\href{#1}{\underline{#2}}
+}
+%% ENLACES

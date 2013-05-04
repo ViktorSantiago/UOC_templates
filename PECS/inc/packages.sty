@@ -1,0 +1,41 @@
+%MARGENES Y COMPOSICION DE PAGINA
+\pagestyle {empty}
+\topmargin -2.6cm
+\oddsidemargin -0.5cm
+\textwidth 17.5cm
+\textheight 25cm
+
+%% SELECCION DE IDIOMA
+\usepackage[utf8]{inputenc}
+\usepackage[activeacute, spanish]{babel}
+%% CONDICIONALES LATEX
+\usepackage{ifthen}
+%% TIPOGRAFIA 
+\ifthenelse{\equal{src}{\visual}}{\renewcommand{\familydefault}{\sfdefault}}{}
+%% MATEMATICAS
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{amssymb}
+%% GRAFICOS Y COLORES
+\usepackage[pdftex]{graphicx}
+    %\graphicspath{{./graf/img/}}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{./inc/colors}
+%% MINTED: entornos para codigo fuente
+\ifthenelse{\equal{code}{\code}}{\usepackage{./inc/minted}}{}
+%% USO DE COLOR EN LAS TABLAS
+\usepackage{colortbl}
+%%  ENLACES 
+\usepackage{hyperref}
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=amarillo,          % color of internal links
+    citecolor=amarillo,        % color of links to bibliography
+    filecolor=amarillo,      % color of file links
+    urlcolor=morado           % color of external links
+}

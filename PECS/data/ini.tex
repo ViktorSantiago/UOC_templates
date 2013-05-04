@@ -1,0 +1,40 @@
+\cabeceraNum{1}
+	\enu{1}{El primer tipo de caja contiene enunciados que vienen numerados; pero sin indicar el apartado.}
+
+	\begin{itemize}
+		\item[A)]{En realidad no importa mucho}
+		\item[B)]{porque $\LaTeX$ permite}
+		\item[C)]{crear listas numeradas por letras (o números, o números romanos)}
+		\item[D)]{y con ella crear los sub-apartados}
+
+	\end{itemize}
+
+	Así que se puede usar éste tipo de enunciado para preguntas en las que los apartados no sean demasiado independientes entre sí.
+
+	\enunciado{2}{A}{El segundo tipo de caja contiene enunciados numerados y con la indicación del número de apartado.}
+
+	Si los apartados de la pregunta son ejercicios en sí mismos, podemos usar éste tipo de caja que incluye la indicación del apartado dentro de la pregunta. 
+
+	Las \texttt{PEC} suelen estar numeradas, así que la cabecera del documento nos servirá. Pero en algunas asignaturas sólo hay una {\bf práctica}. No tiene mucho sentido numerarla, por lo que podemos usar la {\it cabecera no numerada} en su lugar: 
+
+	\cabecera
+
+	Pero nunca perderemos el poder de $\LaTeX$ :
+
+	\begin{equation*}
+  	x = a_0 + \cfrac{1}{a_1
+    	      + \cfrac{1}{a_2
+      	    + \cfrac{1}{a_3 + \cfrac{1}{a_4} } } }
+	\end{equation*}
+
+	¡Y hay más!:
+
+\begin{minted}[linenos]{c++}
+  #include <iostream>
+  using namespace std;
+
+  int main() {
+    cout << "Hola Mundo" << endl;
+    return 0;
+  }
+	\end{minted}
